@@ -1,0 +1,93 @@
+/* style Interaktif Soal & Jawaban (Rahmad Riyandi)
+Mengatur tampilan opsi jawaban dalam kondisi normal, benar, salah, dan setelah dipilih.
+Termasuk ikon ✔ dan ✖, serta efek transisi untuk umpan balik visual. */
+.option {
+    cursor: pointer;
+    border: 1px solid #ddd;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.option.correct {
+    background-color: #d4edda;
+    border-color: #28a745;
+    color: #155724;
+    position: relative;
+}
+
+.option.correct::after {
+    content: "✔";
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    font-weight: bold;
+    color: #28a745;
+}
+
+.option.incorrect {
+    background-color: #f8d7da;
+    border-color: #dc3545;
+    color: #721c24;
+    position: relative;
+}
+
+.option.incorrect::after {
+    content: "✖";
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    font-weight: bold;
+    color: #dc3545;
+}
+
+.option.disabled {
+    pointer-events: none;
+    opacity: 0.8;
+}
+
+#question-counter {
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+#result-container {
+    max-width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+#result-container h2 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+#result-container p {
+    margin-bottom: 8px;
+    font-size: 15px;
+}
+
+#result-container p strong {
+    font-weight: bold;
+}
+
+.btn-ulang {
+    background-color: transparent;
+    color: #007bff;
+    border: 1px solid #007bff;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-ulang:hover {
+    background-color: #007bff;
+    color: white;
+}
