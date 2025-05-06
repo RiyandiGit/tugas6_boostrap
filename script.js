@@ -59,3 +59,41 @@ function selectAnswer(element, selected, correct) {
     if (selected === correct) score++;
     document.getElementById("next-btn").disabled = false;
 }
+
+// Bagian 3: Navigasi Soal, Skor Akhir dan Restart (mohammad fauzi rahman)
+// Bagian ini bertanggung jawab Menangani logika untuk pindah soal, menampilkan skor akhir, dan mengulang kuis
+function nextQuestion() {
+    if (currentQuestion < quizData.length - 1) {
+        currentQuestion++;
+        showQuestion();
+    } else {
+        clearInterval(timer);
+        showScore();
+    }
+}
+
+function showScore() {
+    const totalQuestions = quizData.length;
+    const finalScore = ((score / totalQuestions) * 100).toFixed(2);
+    const container = document.getElementById("question-container");
+    container.innerHTML = `
+        <h4 class="text-center">Kuis Selesai!</h4>
+        <p class="text-center">Skor Anda: <strong>${score}</strong> dari <strong>${totalQuestions}</strong> soal.</p>
+        <p class="text-center">Nilai Akhir: <strong id="final-score">${finalScore}</strong></p>
+        <div class="text-center mt-3">
+            <button class="btn-ulang" onclick="restartQuiz()">Ulang Kuis</button>
+        </div>
+    `;
+    document.getElementById("next-btn").style.display = "none";
+    document.getElementById("question-counter").textContent = "";
+}
+
+function restartQuiz() {
+    currentQuestion = 0;
+    score = 0;
+    timeLeft = 300;
+    clearInterval(timer);
+    startTimer();
+    showQuestion();
+    document.getElementById("next-btn").style.display = "inline-block";
+}
