@@ -1,0 +1,31 @@
+<!-- bagian html dibuat oleh (Rahmad Ryandi) -->
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Quizzi Pilkomers</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="quiz-box shadow">
+            <!-- Header kuis: Judul dan Timer -->
+            <div class="d-flex justify-content-between mb-3">
+                <strong>Programming Quiz</strong>
+                <div class="timer-box">Time Left: <span id="timer">--</span></div>
+            </div>
+
+            <!-- Konten kuis: Garis pemisah dan Tempat soal dan opsi jawaban akan ditampilkan oleh JavaScript -->
+            <hr class="line" />
+            <div id="question-container"><!--Tempat soal dan opsi jawaban--></div>
+            <hr class="line" />
+
+            <!-- footer kuis: nomor soal dan tombol Next soal -->
+            <div class="d-flex justify-content-between mt-4">
+                <small id="question-counter"></small>
+                <button id="next-btn" class="btn btn-primary btn-sm" onclick="nextQuestion()">Next Question</button>
+            </div>
+        </div>
+    </body>
+    <script src="script.js"></script>
+</html>
