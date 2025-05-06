@@ -1,0 +1,77 @@
+[
+    {
+        "question": "Apa nama organisasi yang menetapkan standar Web?",
+        "options": ["Microsoft Corporation", "IBM Corporation", "World Wide Web Consortium", "Apple Inc."],
+        "answer": "World Wide Web Consortium"
+    },
+    {
+        "question": "Apa jenis bahasa HTML?",
+        "options": ["Programming Language", "OOP Language", "High Level Language", "Markup Language"],
+        "answer": "Markup Language"
+    },
+    {
+        "question": "Apa sebutan untuk halaman yang dibuat dengan HTML?",
+        "options": ["Yellow Page", "Web Page", "Server Page", "Front Page"],
+        "answer": "Web Page"
+    },
+    {
+        "question": "Apa kepanjangan dari HTML?",
+        "options": ["Hyper Text Preprocessor", "Hyper Text Markup Language", "Hyper Text Multiple Language", "Hyper Tool Multi Language"],
+        "answer": "Hyper Text Markup Language"
+    },
+    {
+        "question": "Apa fungsi utama dari CSS dalam pengembangan web?",
+        "options": ["Mengelola database", "Mengatur tampilan dan gaya halaman web", "Menjalankan logika program", "Membuat struktur HTML"],
+        "answer": "Mengatur tampilan dan gaya halaman web"
+    },
+    {
+        "question": "Apa yang dilakukan fungsi console.log() dalam JavaScript?",
+        "options": ["Menghapus data", "Menampilkan output di konsol", "Menjalankan perulangan", "Menyimpan file"],
+        "answer": "Menampilkan output di konsol"
+    },
+    {
+        "question": "JSON adalah singkatan dari?",
+        "options": ["JavaScript Object Notation", "Java Object Notation", "JavaScript Object Normalization", "JavaScript Object-Oriented Notation"],
+        "answer": "JavaScript Object Notation"
+    },
+    {
+        "question": "Dalam sintaks JSON, data dipisahkan oleh?",
+        "options": ["Titik koma", "Titik dua", "Koma", "Titik"],
+        "answer": "Koma"
+    },
+    {
+        "question": "Dalam sintaks JSON, array ditulis dalam?",
+        "options": ["[ ]", "{ }", "( )", "< >"],
+        "answer": "[ ]"
+    },
+    {
+        "question": "Tipe data yang tidak didukung dalam JSON adalah?",
+        "options": ["String", "Boolean", "Function", "Number"],
+        "answer": "Function"
+    },
+    {
+        "question": "Semua elemen HTML harus memiliki atribut ID",
+        "options": ["Benar", "Salah"],
+        "answer": "Salah"
+    },
+    {
+        "question": "CSS digunakan untuk mengatur tampilan dan layout halaman web",
+        "options": ["Benar", "Salah"],
+        "answer": "Benar"
+    },
+    {
+        "question": "JavaScript bisa digunakan untuk membuat interaksi pada halaman web",
+        "options": ["Benar", "Salah"],
+        "answer": "Benar"
+    },
+    {
+        "question": "JSON hanya dapat digunakan dalam bahasa pemrograman JavaScript",
+        "options": ["Benar", "Salah"],
+        "answer": "Salah"
+    },
+    {
+        "question": "Struktur data JSON terdiri dari pasangan key dan value",
+        "options": ["Benar", "Salah"],
+        "answer": "Benar"
+    }
+]
