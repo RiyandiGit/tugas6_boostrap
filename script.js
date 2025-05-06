@@ -26,3 +26,36 @@ function startTimer() {
         }
     }, 1000);
 }
+
+// Bagian 2: menampilkan Pilihan Jawaban dan Menampilkan Soal (rahmad riyandi)
+// Bagian ini bertanggung jawab menampilkan soal, menampilkan pilihan jawaban dan memproses jawaban user
+function showQuestion() {
+    const q = quizData[currentQuestion];
+    const container = document.getElementById("question-container");
+    container.innerHTML = `
+        <h5>${currentQuestion + 1}. ${q.question}</h5>
+        ${q.options
+            .map(
+                (opt) => `
+            <div class="option" onclick="selectAnswer(this, '${opt.replace(/'/g, "\\'")}', '${q.answer.replace(/'/g, "\\'")}')">${opt}</div>
+        `
+            )
+            .join("")}
+    `;
+    document.getElementById("question-counter").textContent = `${currentQuestion + 1} dari ${quizData.length} soal`;
+    document.getElementById("next-btn").disabled = true;
+}
+
+function selectAnswer(element, selected, correct) {
+    const options = document.querySelectorAll(".option");
+    options.forEach((opt) => {
+        opt.classList.add("disabled");
+        if (opt.textContent === correct) {
+            opt.classList.add("correct");
+        } else if (opt.textContent === selected && selected !== correct) {
+            opt.classList.add("incorrect");
+        }
+    });
+    if (selected === correct) score++;
+    document.getElementById("next-btn").disabled = false;
+}
