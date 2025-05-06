@@ -1,3 +1,42 @@
+/* style Tampilan Utama Kuis (meikal gina setiawan)
+Mengatur tata letak utama seperti kotak kuis, timer, dan garis pemisah.
+Termasuk pengaturan font, margin, padding, background, dan bayangan kotak. */
+.quiz-box {
+    max-width: 500px;
+    margin: 50px auto;
+    border: 6px solid #0d6efd;
+    padding: 20px;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.timer-box {
+    background: #bfe6fd;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.timer-box span {
+    background-color: #000000;
+    color: #fff;
+    padding: 4px 12px;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+.line {
+    border: none;
+    border-top: 2px solid #4190c1;
+    margin: 20px 0;
+}
+
+.d-flex.justify-content-between.mb-3 strong {
+    font-size: 24px;
+}
+
 /* style Interaktif Soal & Jawaban (Rahmad Riyandi)
 Mengatur tampilan opsi jawaban dalam kondisi normal, benar, salah, dan setelah dipilih.
 Termasuk ikon ✔ dan ✖, serta efek transisi untuk umpan balik visual. */
